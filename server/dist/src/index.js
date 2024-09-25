@@ -22,7 +22,7 @@ app.use(body_parser_1.default.json());
 app.use(body_parser_1.default.urlencoded({ extended: false }));
 app.use((0, cors_1.default)());
 /* Routes */
-app.use("dashboard", dashboardRoutes_1.default);
+app.use("/dashboard", dashboardRoutes_1.default);
 /* Server */
 const port = process.env.PORT || 3001;
 app.listen(port, () => {

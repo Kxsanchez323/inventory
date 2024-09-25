@@ -33,7 +33,6 @@ CREATE TABLE "Sales" (
 -- CreateTable
 CREATE TABLE "Purchases" (
     "purchaseId" TEXT NOT NULL,
-    "userId" TEXT NOT NULL,
     "productId" TEXT NOT NULL,
     "timestamp" TIMESTAMP(3) NOT NULL,
     "quantity" INTEGER NOT NULL,

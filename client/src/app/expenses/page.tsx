@@ -56,7 +56,7 @@ const Expenses = () => {
         return matchesCategory && matchesDate;
       })
       .reduce((acc: AggregatedData, data: ExpenseByCategorySummary) => {
-        const amount = parseInt(data.amount, 10);
+        const amount = parseInt(data.amount.toString(), 10);
         if (!acc[data.category]) {
           acc[data.category] = { name: data.category, amount: 0 };
           acc[data.category].color = `#${Math.floor(

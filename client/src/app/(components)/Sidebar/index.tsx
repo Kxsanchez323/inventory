@@ -5,6 +5,7 @@ import { setIsSidebarCollapsed } from "@/state/index";
 import { Archive, CircleDollarSign, Clipboard, Layout, LucideIcon, Menu, SlidersHorizontal, User } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 
 interface SidebarLinkProps {
   href: string;
@@ -68,7 +69,13 @@ const Sidebar = () => {
           isSidebarCollapsed ? "px-5" : "px-8"
         }`}
       >
-        <div>Logo</div>
+        <Image 
+        src="https://s3-inventorybucket.s3.amazonaws.com/logo.png"
+        alt="Logo"
+        width={27}
+        height={27}
+        className="rounded w-8"
+        />
         <h1
           className={`${
             isSidebarCollapsed ? "hidden" : "block"

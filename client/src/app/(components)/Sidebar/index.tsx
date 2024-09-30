@@ -70,7 +70,7 @@ const Sidebar = () => {
         }`}
       >
         <Image 
-        src="https://s3-inventorybucket.s3.amazonaws.com/logo.png"
+        src="https://s3-inventorybucket2.s3.amazonaws.com/logo.png"
         alt="Logo"
         width={27}
         height={27}
